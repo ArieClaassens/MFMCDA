@@ -37,7 +37,7 @@ public class MessageBox {
     Stage stage = new Stage();
     stage.initModality(Modality.APPLICATION_MODAL);
     stage.setTitle(title);
-    stage.setMinWidth(300);
+    stage.setMinWidth(350);
     Label lbl = new Label();
     lbl.setText(message);
     Button btnOK = new Button();
