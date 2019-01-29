@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mfmcda.FXMLDocumentController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New Project" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#handleAboutMenuAction" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <TextArea fx:id="txtComments" layoutX="49.0" layoutY="95.0" prefHeight="203.0" prefWidth="224.0" promptText="Add comments here...." wrapText="true" />
+            <TextField fx:id="lyrFileName1" editable="false" layoutX="473.0" layoutY="102.0" promptText="Click on the Select File button" text="Layer 1 Filename" />
+            <Button fx:id="btnSelectFile1" layoutX="640.0" layoutY="102.0" mnemonicParsing="false" onAction="#handleSelectFileAction1" text="Select File" />
+            <TextField fx:id="lyrName1" layoutX="295.0" layoutY="102.0" promptText="Add a name for the layer" text="Layer1Name" />
+            <Slider fx:id="slider1" blockIncrement="1.0" layoutX="747.0" layoutY="96.0" majorTickUnit="1.0" max="5.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" />
+            <Slider fx:id="slider2" blockIncrement="1.0" layoutX="747.0" layoutY="141.0" majorTickUnit="1.0" max="5.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="2.0" />
+            <TextField fx:id="lyrName2" layoutX="295.0" layoutY="147.0" promptText="Add a name for the layer" text="Layer2Name" />
+            <Button fx:id="btnSelectFile2" layoutX="640.0" layoutY="147.0" mnemonicParsing="false" onAction="#handleSelectFileAction2" text="Select File" />
+            <TextField fx:id="lyrFileName2" editable="false" layoutX="473.0" layoutY="147.0" promptText="Click on the Select File button" text="Layer 2 Filename" />
+            <Slider fx:id="slider3" blockIncrement="1.0" layoutX="747.0" layoutY="179.0" majorTickUnit="1.0" max="5.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="3.0" />
+            <TextField fx:id="lyrName3" layoutX="295.0" layoutY="185.0" promptText="Add a name for the layer" text="Layer3Name" />
+            <Button fx:id="btnSelectFile3" layoutX="640.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleSelectFileAction3" text="Select File" />
+            <TextField fx:id="lyrFileName3" editable="false" layoutX="473.0" layoutY="185.0" promptText="Click on the Select File button" text="Layer 3 Filename" />
+            <Slider fx:id="slider4" blockIncrement="1.0" layoutX="747.0" layoutY="222.0" majorTickUnit="1.0" max="5.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="4.0" />
+            <TextField fx:id="lyrName4" layoutX="295.0" layoutY="228.0" promptText="Add a name for the layer" text="Layer4Name" />
+            <Button fx:id="btnSelectFile4" layoutX="640.0" layoutY="228.0" mnemonicParsing="false" onAction="#handleSelectFileAction4" text="Select File" />
+            <TextField fx:id="lyrFileName4" editable="false" layoutX="473.0" layoutY="228.0" promptText="Click on the Select File button" text="Layer 4 Filename" />
+            <Slider fx:id="slider5" blockIncrement="1.0" layoutX="747.0" layoutY="265.0" majorTickUnit="1.0" max="5.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="5.0" />
+            <TextField fx:id="lyrName5" layoutX="295.0" layoutY="271.0" promptText="Add a name for the layer" text="Layer5Name" />
+            <Button fx:id="btnSelectFile5" layoutX="640.0" layoutY="271.0" mnemonicParsing="false" onAction="#handleSelectFileAction5" text="Select File" />
+            <TextField fx:id="lyrFileName5" editable="false" layoutX="473.0" layoutY="271.0" promptText="Click on the Select File button" text="Layer 5 Filename" />
+            <Canvas height="200.0" layoutX="49.0" layoutY="335.0" width="200.0" />
+            <Button fx:id="btnStartProcess" layoutX="480.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleStartProcess" text="Start the process" />
+            <Button fx:id="btnClear" layoutX="330.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleClearButton" text="Clear All Input" />
+            <Label fx:id="lblLayerNames" layoutX="309.0" layoutY="66.0" text="Friendly Layer Names">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblLayerFileNames" layoutX="495.0" layoutY="66.0" text="Layer Filenames">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblLayerWeights" layoutX="777.0" layoutY="66.0" text="Layer Weights">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblLayerNames1" layoutX="119.0" layoutY="66.0" text="Comments">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
